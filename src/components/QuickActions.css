@@ -1,0 +1,174 @@
+.quick-actions {
+  background-color: #f8f9fa;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quick-actions h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.quick-actions-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.quick-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quick-action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.quick-action-btn:active {
+  transform: translateY(0);
+}
+
+.btn-icon {
+  font-size: 1.2em;
+}
+
+.btn-text {
+  white-space: nowrap;
+}
+
+.quick-action-btn--complete {
+  background-color: #4caf50;
+  color: white;
+}
+
+.quick-action-btn--complete:hover {
+  background-color: #45a049;
+}
+
+.quick-action-btn--reset {
+  background-color: #ff9800;
+  color: white;
+}
+
+.quick-action-btn--reset:hover {
+  background-color: #e68900;
+}
+
+.quick-action-btn--random {
+  background-color: #2196f3;
+  color: white;
+}
+
+.quick-action-btn--random:hover {
+  background-color: #0b7dda;
+}
+
+.quick-action-btn--export {
+  background-color: #9c27b0;
+  color: white;
+}
+
+.quick-action-btn--export:hover {
+  background-color: #7b1fa2;
+}
+
+.export-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.export-modal-content p {
+  margin: 0;
+  color: #666;
+}
+
+.export-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #2196f3;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0b7dda;
+}
+
+.btn-secondary {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #d0d0d0;
+}
+
+.export-data-preview {
+  margin-top: 15px;
+}
+
+.export-data-preview summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.export-data-preview pre {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.85em;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .quick-actions-buttons {
+    flex-direction: column;
+  }
+  
+  .quick-action-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .export-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
